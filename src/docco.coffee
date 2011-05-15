@@ -158,7 +158,8 @@ for ext, l of languages
 
   # The mirror of `divider_text` that we expect Pygments to return. We can split
   # on this to recover the original sections.
-  # Note: the class is "c" for Python and "c1" for the other languages
+  # Note: the class is "c" for Python; for other languages, it may be followed
+  # by one other character.
   l.divider_html = new RegExp('\\n*<span class="c.?">' + l.symbol + 'DIVIDER<\\/span>\\n*')
 
 # Get the current language we're documenting, based on the extension.
