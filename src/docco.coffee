@@ -133,6 +133,14 @@ languages =
     name: 'ruby', symbol: '#'
   '.py':
     name: 'python', symbol: '#'
+  '.m':
+    name: 'objc', symbol: '//'
+  '.cpp':
+    name: 'cpp', symbol: '//'
+  '.hs':
+    name: 'haskell', symbol: '--'
+  '.scala':
+    name: 'scala', symbol: '//'
 
 # Build out the appropriate matchers and delimiters for each language.
 for ext, l of languages
